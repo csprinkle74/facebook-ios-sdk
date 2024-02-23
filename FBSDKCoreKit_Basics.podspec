@@ -40,15 +40,4 @@ Pod::Spec.new do |s|
     CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     LICENSE
   }
-  s.author       = 'Facebook'
 
-  s.platform     = :ios
-  s.ios.deployment_target = '12.0'
-  s.library = 'z'
-
-  s.source = {
-    http: "https://github.com/facebook/facebook-ios-sdk/releases/download/v#{s.version}/FacebookSDK_Dynamic.xcframework.zip",
-    sha1: '91e2b86b13699319e713f4b1359ca47503cdc316'
-  }
-  s.vendored_frameworks = 'XCFrameworks/FBSDKCoreKit_Basics.xcframework'
-end
